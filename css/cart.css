@@ -1,0 +1,385 @@
+/* cart.css */
+/* 通用重置样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* 导航栏样式 */
+.navbar {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand a {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #e64500;
+}
+
+/* 购物车样式 */
+.container {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.cart-header h2 {
+    font-size: 1.8rem;
+}
+
+.cart-header .select-all {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-items {
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.cart-item {
+    display: grid; /* 使用网格布局 */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 自动适应列宽，最小200px，占满父容器 */
+    gap: 20px; /* 列之间的间距 */
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item-img {
+    width: 80px; /* 调整封面图大小 */
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.cart-item-details {
+    grid-column: span 4; /* 跨越4列 */
+}
+
+.cart-item-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.cart-item-details p {
+    color: #666;
+    margin-bottom: 5px;
+    font-size: 0.9rem; /* 调整字体大小 */
+}
+
+.cart-item-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 文字居中 */
+    gap: 5px;
+}
+
+.cart-item-quantity input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.cart-item-delete-btn {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cart-item-delete-btn:hover {
+    background-color: #e64500;
+}
+
+.cart-summary {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-summary-total {
+    font-size: 1.2rem;
+}
+
+.cart-summary-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-summary-checkout-btn {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cart-summary-checkout-btn:hover {
+    background-color: #e64500;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item-img {
+        margin-bottom: 10px;
+    }
+
+    .cart-summary {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+/* 表格样式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.cart-item-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.cart-item-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item-quantity input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.cart-item-delete-btn {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cart-item-delete-btn:hover {
+    background-color: #e64500;
+}
+
+.checkout {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+}
+
+.quantity-btn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    user-select: none;
+}
+
+.quantity-btn:active {
+    background-color: #ccc;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+    border: none;
+    padding: 5px;
+    margin: 0;
+    box-shadow: 0px 0px 5px #ccc;
+    border-radius: 0;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.quantity-btn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 15px;
+    margin: 0 2px;
+}
+
+.quantity-btn:active {
+    background-color: #ccc;
+}
+
+.quantity-btn:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+}
+
+.quantity-btn:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+}
+
+
+
+/* 新增的CSS代码 */
+.delete-btn {
+    background-color: #FFA500; /* 橙色 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.delete-btn:hover {
+    background-color: #FF8C00; /* 深橙色 */
+}
+
+.delete-btn:active {
+    background-color: #FF7F50; /* 珊瑚色 */
+}
+
+
+/* 现代风格的结算按钮 */
+.modern-checkout-button {
+    padding: 12px 24px;
+    background-color: #f90; /* 橙色背景 */
+    color: #fff; /* 白色文字 */
+    border: none;
+    border-radius: 20px; /* 圆角 */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* 过渡效果 */
+}
+
+.modern-checkout-button:hover {
+    background-color: #e68200; /* 悬停时的背景颜色 */
+}
+
+/* 现代风格的总商品数和总价格 */
+.modern-total-items, .modern-total-price {
+    font-size: 16px;
+    margin-bottom: 10px; /* 调整间距 */
+}
+

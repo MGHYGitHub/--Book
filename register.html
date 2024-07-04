@@ -1,0 +1,53 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/register.css">
+    <script>
+        // 验证表单函数
+        function validateForm() {
+            // 获取密码和确认密码的值
+            var password = document.forms["registerForm"]["password"].value;
+            var confirmPassword = document.forms["registerForm"]["confirm_password"].value;
+
+            // 检查密码和确认密码是否匹配
+            if (password != confirmPassword) {
+                // 弹出提示框告知用户密码不匹配
+                alert("密码和确认密码不匹配！");
+                // 阻止表单提交
+                return false;
+            }
+            // 如果匹配则允许表单提交
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div class="registerBox">
+        <h2>注册</h2>
+        <form name="registerForm" action="register.php" method="POST" onsubmit="return validateForm()">
+            <div class="item">
+                <input type="text" name="username" required>
+                <label>用户名</label>
+            </div>
+            <div class="item">
+                <input type="email" name="email" required>
+                <label>邮箱</label>
+            </div>
+            <div class="item">
+                <input type="password" name="password" required>
+                <label>密码</label>
+            </div>
+            <div class="item">
+                <input type="password" name="confirm_password" required>
+                <label>确认密码</label>
+            </div>
+            <button type="submit" class="btn register-btn">注册</button>
+        </form>
+        <a href="login.html" class="btn">返回登录</a>
+    </div>
+</body>
+</html>
