@@ -1,0 +1,22 @@
+Date and Time: 2024/07/04_÷‹Àƒ_12:12:56.86 
+add_favorite.php
+book.php
+book.sql
+book_list.php
+cart.php
+contact.html
+db.php
+favorites.php
+index.php
+LICENSE
+login.html
+login.php
+logout.php
+README.html
+README.md
+register.html
+register.php
+remove_favorite.php
+remove_from_cart.php
+sort_files.bat
+sorted_files.txt

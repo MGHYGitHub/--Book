@@ -202,7 +202,8 @@ $conn->close();
             <img src="path/to/logo.png" alt="页面商标" style="height: 50px;">
         </div> -->
         <div style="margin-top: 10px;">
-            © <?php echo date("Y"); ?>| 橙子🍊 | <a href="http://www.yopy.com" style="color: #007bff; text-decoration: none;">www.yopy.com</a>
+            © <?php echo date("Y"); ?>| 橙子🍊 | <a href="http://www.yopy.com" style="color: #007bff; text-decoration: none;">www.yopy.com</a> |
+            <a href="https://github.com/MGHYGitHub/Book_Mall" target="_blank" >GitHub </a>
         </div>
         <div style="margin-top: 5px;">
             <a href="https://www.yopy.com/" style="color: #007bff; text-decoration: none;">蜀ICP备13014270号</a>

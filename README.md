@@ -136,14 +136,14 @@ try {
 
 ### 图片示例
 
-![首页](./README.assets/%E9%A6%96%E9%A1%B5.png)
+![image-20240704121032279](./README.assets/image-20240704121032279.png)
 
 ![](./README.assets/%E7%99%BB%E5%BD%95%E9%A1%B5.png)
 
 ![注册页面](./README.assets/%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A2.png)
 
-![收藏](./README.assets/%E6%94%B6%E8%97%8F.png)
+![image-20240704121052600](./README.assets/image-20240704121052600.png)
 
-![购物车](./README.assets/%E8%B4%AD%E7%89%A9%E8%BD%A6.png)
+![image-20240704121101916](./README.assets/image-20240704121101916.png)
 
-![联系我们丨消息页面](./README.assets/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC%E4%B8%A8%E6%B6%88%E6%81%AF%E9%A1%B5%E9%9D%A2.png)
+![image-20240704121112114](./README.assets/image-20240704121112114.png)

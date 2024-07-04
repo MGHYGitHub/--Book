@@ -75,7 +75,8 @@ $favorites = $stmt->fetchAll();
     </div>
     <footer style="text-align: center; padding: 20px 0; background-color: #f8f9fa; border-top: 1px solid #e9ecef;">
         <div style="margin-top: 10px;">
-            © <?php echo date("Y"); ?>| 橙子🍊 | <a href="http://www.yopy.com" style="color: #007bff; text-decoration: none;">www.yopy.com</a>
+            © <?php echo date("Y"); ?>| 橙子🍊 | <a href="http://www.yopy.com" style="color: #007bff; text-decoration: none;">www.yopy.com</a> |
+            <a href="https://github.com/MGHYGitHub/Book_Mall" target="_blank" >GitHub </a>
         </div>
         <div style="margin-top: 5px;">
             <a href="https://www.yopy.com/" style="color: #007bff; text-decoration: none;">蜀ICP备13014270号</a>
